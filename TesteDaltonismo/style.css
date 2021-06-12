@@ -1,0 +1,138 @@
+
+.container-fluid{
+    top: 20px;
+    width: 1200px;
+    margin-bottom: -30px;
+    background-color: rgba(245, 241, 236, 0.623);
+
+}
+
+header{
+    width: 960px;
+}
+
+.main-menu{
+    margin-left: 50px;
+}
+.main-menu ul{
+    list-style: none;
+}
+.main-menu ul li{
+    position: relative;
+    width: 130px;
+    left: 200px;
+    display: inline-block;
+    top:15px;   
+    background-color: rgb(27, 25, 25);
+    margin:5px;
+    text-align: center;
+
+    
+}
+.main-menu ul li a{
+    text-decoration: none;
+    font-size: 16px;    
+}
+.main-menu ul li a:link,
+.main-menu ul li a:visited{
+    color: white;
+}
+
+#green{
+    color: green;
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+#red{
+    color: red;
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+}
+#blue{
+    color: blue;
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+#normal{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+}
+footer{
+    background-color: rgb(105, 98, 98);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    height: 100px;
+    margin-top: 30px;
+    text-decoration: rgba(0, 0, 0, 0.363);
+    text-align: center;
+    line-height: 120px;
+    margin-top: 50px;
+    margin: 5px;
+
+}
+
+.topicoResposta{
+    text-align: center;
+    font-weight: 900;
+    font-family: Della Respira;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 25px;
+  }
+
+.textoResposta{
+    font-family: Della Respira;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .titleRectangle{
+    position: absolute;
+    width: 680px;
+    height: 66px; 
+    background: rgb(105, 98, 98);
+    left: 273px;
+    color: white;
+    }
+
+.titulo{
+    font-family: Della Respira;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+h1{
+    font-family: Della Respira;
+    text-align: center;
+}
+
+#titulo{
+        font-family: Della Respira;
+        text-align: center;
+        padding-top: 10px;
+        width: 580px;
+        margin-left: 35px;
+}
+.textoExplicativo{
+    font-family: Della Respira;
+    font-size: 20px;
+}
+
+a{
+    font-family: Della Respira;
+
+}
+p{
+    text-align: center;
+}

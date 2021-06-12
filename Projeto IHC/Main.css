@@ -1,0 +1,47 @@
+.titleRectangle{
+    position: absolute;
+    width: 680px;
+    height: 66px; 
+    background: #F8EFEF;
+}
+
+.buttonA{
+      display: inline-block;
+      position: absolute;
+      width: 120px;
+      height: 28px;
+      background: #F8EFEF;
+      font-family: Della Respira;
+      font-size: 18px;
+      text-align: center;
+}
+
+.mover:hover .buttonHover{
+      opacity: 1;
+}
+
+.buttonHover{
+      position: absolute;
+      transition: 1.0s ease;
+      opacity: 0;
+      font-family: Della Respira;
+      font-size: 18px;
+      width: 337px;
+      height: 28px;
+      background: #F8EFEF;
+      text-decoration: none;
+}
+
+.mainImages{
+      position: absolute;
+}
+
+img{
+      position: absolute;
+}
+
+a{
+      position: absolute;
+      text-decoration: none;
+      color: #111111;
+}

@@ -1,0 +1,126 @@
+
+.container{
+    top: 20px;
+    width: 1200px;
+    margin-bottom: -30px;
+    background-color: rgb(214, 210, 206);
+
+}
+body{
+    position: absolute;
+    width: 1200px;
+    margin: 10px;
+    padding: 10px;
+    background-image: url(https://a-static.mlcdn.com.br/618x463/papel-de-parede-para-cozinha-copa-lanchonete-adesivo-bege-com-comida-pizza-refrigerante-sorvete-10-m-toque-pop/toquepop/ppc045-10m/c1c51726d2328c6ebbb89fef742a7310.jpg);
+    background-repeat: repeat;
+}
+header{
+    width: 960px;
+}
+.logo{
+    position: relative;
+    left: 50%;
+    top: 10px;
+    height: 100px;
+    width: 100px;
+}
+.main-menu{
+    margin-left: 50px;
+}
+.main-menu ul{
+    list-style: none;
+}
+.main-menu ul li{
+    position: relative;
+    width: 100px;
+    left: 100px;
+    display: inline-block;
+    top:15px;   
+    background-color: rgb(78, 76, 76);
+    margin:5px;
+    text-align: center;
+
+    
+}
+.main-menu ul li a{
+    text-decoration: none;
+    font-size: 16px;    
+}
+.main-menu ul li a:link,
+.main-menu ul li a:visited{
+    color: white;
+}
+#carouselExampleControls{
+    margin:10px;
+}
+span{
+   position: relative;
+   top: -200px;
+   display: inline-block;  
+   width: 320px; 
+   padding: 3%;
+   left: 10px;
+   text-align: center;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.363);
+   font-style: italic;
+   font-weight: bold;
+}
+.sale{
+    top: -220px;
+    left: 250px;
+    width: 70px;
+    height: 70px;
+}
+.product{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    top: -70px;
+    margin-top: 80px;
+}
+.product img{
+   position: relative;
+   margin: 10px;
+
+     
+}
+.product button{
+   position: relative;
+   top: -100px;
+   width: 100px;
+   display: inline-block;
+   background-color: rgb(78, 76, 76);
+   padding: 5px 10px;
+   color: white;
+   font-weight: bold;
+   outline: none;
+   cursor: pointer;
+}
+p{
+   text-align: justify;
+   position: relative;
+   margin: auto;
+   top: -120px;
+   font-size: 12px;
+}
+.titulo{
+   position: relative;
+   top: -130px;
+   font-size: 15px;
+   text-align: left;
+   font-weight: bold;
+
+}
+footer{
+    background-color: red;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    height: 100px;
+    margin-top: 30px;
+    text-decoration: rgba(0, 0, 0, 0.363);
+    text-align: center;
+    line-height: 120px;
+
+}
