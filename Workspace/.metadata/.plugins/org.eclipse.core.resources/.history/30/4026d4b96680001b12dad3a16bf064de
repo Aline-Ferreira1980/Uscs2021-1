@@ -1,0 +1,65 @@
+package algoritmoestruturadedados;
+
+public class TadPilha {
+	int dados[];
+	int topo;
+	int capacidade;
+
+	
+	public TadPilha() {
+		
+	}
+	public TadPilha(int tam) {
+		this.topo = -1;
+		this.capacidade = tam;
+		this.dados = new int [capacidade];	
+	}
+	public boolean vazio() {
+		return (topo== -1);
+	}
+	public boolean cheia() {
+		return (capacidade == topo-1);
+	}
+	
+	public boolean empilha(int elemento) {
+		if (!cheia()) {
+			topo++;
+			dados[topo] = elemento;
+			return true;
+		}
+		return false;
+	}
+	public int desempilha () {
+		int retorno = -1;
+		if (!vazio()) {
+			retorno = dados[topo];
+			topo --;
+		}
+		return retorno;
+	}
+	
+	public int getTopo() {
+		return (topo);
+	}
+	public void imprime() {
+		int i;
+		for (i=0; i<= topo; i++) {
+			if (vazio()) {
+				System.out.println("***** Pilha sem Elemento *****");
+			}
+			System.out.println("Elemento: "+i + " = " + this.dados[i]);
+			
+		}
+	}
+		public void imprimeInvertido() {
+			int i;
+			for (i=topo; i>=0; i--) {
+				if (cheia()) {
+					System.out.println("***** Pilha com todos Elemento *****");
+				} 
+				
+				System.out.println("Elemento: "+i + " = " + this.dados[i]);
+				
+		}
+	}
+}

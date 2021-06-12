@@ -1,0 +1,19 @@
+package algoritmoestruturadedados;
+
+public class main {
+
+	public static void main(String[] args) {
+		TadPilha pilha = new TadPilha(10);
+		
+		for (int i = 0; !pilha.cheia(); i++) {
+			
+			if (i % 2 != 0) {
+				pilha.empilha(i);
+			}
+		}
+		
+		pilha.imprime();
+	
+	}
+
+}

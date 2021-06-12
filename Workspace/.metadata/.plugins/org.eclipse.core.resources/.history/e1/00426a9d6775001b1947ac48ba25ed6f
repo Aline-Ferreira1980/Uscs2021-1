@@ -1,0 +1,24 @@
+package algoritmoestruturadedados;
+
+public class TadPilha {
+	int dados[];
+	int topo = -1;
+	int capacidade;
+
+	public static void main(String[] args) {
+
+	}
+
+	public TadPilha() {
+		
+	}
+	public TadPilha(int tam) {
+		this.topo = -1;
+		this.capacidade = tam;
+		
+	}
+	
+	public int empilha() {
+		return int;
+	}
+}

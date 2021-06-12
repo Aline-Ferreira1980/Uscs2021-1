@@ -1,0 +1,38 @@
+package algoritmoestruturadedados;
+
+public class Main {
+	  
+    public static void main (String[]args)   {
+         
+       // a. Criação de pilhas
+          TadPilha pilha1 = new TadPilha (10);
+          TadPilha pilha2 = new TadPilha (10);
+          
+       // b. Empilhar os 10 primeiros números ímpares na pilha1 (Lucas)
+
+         int impar = 1;
+         for(int i = 0; i < 20; i++){
+             pilha1.empilha(impar);
+             impar += 2; // ou impar=impar+2;
+         }
+
+         // versão com while (Gustavo)
+         // int valor = 1;
+         // while (!pilha1.cheia()){
+         //         pilha1.empilha(valor);
+         //         valor = valor + 2;
+         //  }
+
+       while (!pilha2.cheia()) {
+    	   
+    	   pilha2.empilha( pilha1.desempilha());
+       }
+
+       // c. Imprimir os elementos da pilha1
+          pilha1.imprime();
+          pilha2.imprime();
+
+    } //main    
+} //class
+
+

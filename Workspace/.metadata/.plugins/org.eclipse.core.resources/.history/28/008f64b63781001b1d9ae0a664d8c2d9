@@ -1,0 +1,180 @@
+package algoritmoestruturadedados;
+//
+//
+//public class TadPilhaHenzo {
+	
+	public class TadPilhaHenzo {
+	    int capacidade;
+		int topo;
+		int dados[];
+		String nome;
+		
+	//  ----------------------------------------------------------------
+		public TadPilhaHenzo(int n) {
+	//  ----------------------------------------------------------------
+			capacidade = n;
+			topo = -1;
+			dados = new int[capacidade];
+			
+		}	
+			public TadPilhaHenzo(int n, String nome) {
+			//  ----------------------------------------------------------------
+					capacidade = n;
+					this.nome = nome;
+					topo = -1;
+					dados = new int[capacidade];
+		}
+		
+	//  ----------------------------------------------------------------
+		public boolean cheia () {
+	//  ----------------------------------------------------------------
+			return (topo == capacidade-1);
+		}
+	//  ----------------------------------------------------------------
+	    public boolean vazia () {
+	//  ----------------------------------------------------------------
+			return (topo == -1);
+		}
+	//  ----------------------------------------------------------------
+		public boolean empilha (int valor) {
+	//  ----------------------------------------------------------------
+			if(cheia()) { return false;}
+			else {
+			topo++;
+			dados[topo]= valor;
+			return true;
+			}
+		}
+	//  ----------------------------------------------------------------
+		public void imprime () {
+	//  ----------------------------------------------------------------
+	       if (vazia ()) {
+			  System.out.println("      * * * Pilha vazia * * *");
+			}else {
+	           int i;
+	           for(i=0; i <= topo; i++)
+	              System.out.println("Elemento [" + i + "]= " + this.dados[i]); 
+			}
+		}	
+
+	//  ----------------------------------------------------------------
+		public void imprimeInvertido () {
+	//  ----------------------------------------------------------------
+	       if (vazia ()) {
+			  System.out.println("      * * * Pilha vazia * * *");
+			}else {
+	            int i;
+	            for(i=topo; i >= 0; i--)
+	                System.out.println("Elemento " + i + "=" + this.dados[i]);    
+			}
+		}	
+
+	//  ----------------------------------------------------------------
+		public void esvazia () {
+	//  ----------------------------------------------------------------
+	         topo = -1;
+		}
+
+	//  ----------------------------------------------------------------
+	    public int getTopo () {
+	//  ----------------------------------------------------------------
+			return (topo);
+		}
+
+	//  ----------------------------------------------------------------
+	    public int desempilha () {
+	//  ----------------------------------------------------------------
+	       int retorno = -1;
+	       
+	       if(!this.vazia()) {
+	          retorno = dados[this.topo];
+	          this.topo--;
+	       }
+	       return retorno;
+	 	}
+
+
+//	int capacidade;
+//	int dados[];
+//	int n;
+//	int topo;
+//
+//	public TadPilhaHenzo(int n) {
+//
+//		topo = -1;
+//		capacidade = n;
+//		dados = new int[capacidade];
+//
+//	}
+//
+//	public boolean empilhar(int valor) {
+//		if(cheia()) { return false;}
+//		else {
+//		topo++;
+//		dados[topo]= valor;
+//		return true;
+//		}
+////		if (cheia())
+////			return false;
+////		topo++;
+////		dados[topo] = valor;
+////		return true;
+//	}
+//
+////	public boolean desempilhar() {
+////		return (topo == -1);
+////	}
+//
+//	public boolean cheia() {
+//
+//		if (topo == capacidade - 1)
+//			;
+//		return false;
+//	}
+//
+//	public boolean vazio() {
+//		return (topo == -1);
+//	}
+//
+//	public int desempilha() {
+//		// ----------------------------------------------------------------
+//		int retorno = -1;
+//
+//		if (!this.vazio()) {
+//			retorno = dados[this.topo];
+//			this.topo--;
+//		}
+//		return retorno;
+//	}
+//
+//	public void imprime() {
+//
+//		int i;
+//		for (i = 0; i <= topo; i++)
+//			System.out.println("Elemento [" + i + "]=" + this.dados[i]);
+//	}
+//
+//	public int topper() {
+//		return topo;
+//	}
+//
+	public static void main(String args[]) {
+
+		// a. Criação de pilhas
+		TadPilhaHenzo p1 = new TadPilhaHenzo(10);
+		TadPilhaHenzo p2 = new TadPilhaHenzo(10);
+		for (int j = 0; j < 21; j++) {
+			if (j % 2 != 0)
+				p1.empilha(j);
+		}
+
+		
+		for (int j = 0; j < 21; j++) {
+			if (j % 2 != 0)
+				p2.empilha(p1.desempilha());
+		}
+		p2.imprime();
+
+	}
+
+}

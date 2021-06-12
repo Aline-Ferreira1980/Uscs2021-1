@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\Aline - Pessoal\projetos\Workspace\algoritmoestruturadedados\.metadata\.plugins\org.eclipse.jdt.core
+572965229.index
+3664167874.index
