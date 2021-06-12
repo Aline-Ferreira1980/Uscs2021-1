@@ -1,0 +1,26 @@
+SELECT l.idlutador, l.nome, l.idcategoria 
+FROM lutador l 
+WHERE l.idCategoria IN 
+(
+SELECT c.idCategoria FROM categoria c WHERE c.idCategoria BETWEEN 4 AND 7
+);
+
+
+SELECT l.idlutador, l.nome, l.idcategoria 
+FROM lutador l 
+WHERE l.idCategoria BETWEEN 4 AND 7;
+
+
+SELECT c.idCategoria, c.Nome, c.idCampeao
+FROM categoria c 
+ORDER BY c.idCategoria;
+
+SELECT c.idCategoria, c.Nome, c.idCampeao, l.idLutador
+FROM categoria c
+INNER JOIN lutador l 
+ORDER BY c.idCategoria;
+
+SELECT c.idCategoria, c.Nome, c.idCampeao, l.idLutador, l.Nome
+FROM categoria c
+LEFT JOIN lutador l ON l.idLutador = c.idCampeao
+ORDER BY c.idCategoria;
